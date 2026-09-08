@@ -13,12 +13,7 @@ namespace BamawWebApi.Models.Catalog
         public bool IsActive { get; set; } = true;
         [MaxLength(500)]
         public string? Description { get; set; }
-
-        public ICollection<Generation> Generations { get; set; } = new List<Generation>();
-
         //public List<string>? Images { get; set; }
-
-
 
     }
 }

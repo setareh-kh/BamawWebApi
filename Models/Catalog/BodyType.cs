@@ -14,6 +14,6 @@ namespace BamawWebApi.Models.Catalog
         [MaxLength(500)]
         public string? Description { get; set; }
         public bool IsActive { get; set; } = true;
-        public ICollection<Trim> Trims { get; set; }=new List<Trim>();
+        public ICollection<Trim> Trims { get; set; } = new List<Trim>();
     }
 }
