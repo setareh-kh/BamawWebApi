@@ -14,7 +14,7 @@ namespace BamawWebApi.Models.Listing
     }
     public enum PriceType
     {
-        Cash = 1 ,//نقدی
+        Cash = 1,//نقدی
         Installment = 2,//اقساطی
         Negotiable = 3 //توافقی
     }
@@ -67,12 +67,18 @@ namespace BamawWebApi.Models.Listing
         [MaxLength(1000)]
         public string? Description { get; set; }
         // Media
-        public ICollection<ListingMedia> ListingMedias { get; set; }= new List<ListingMedia>();
+        public ICollection<ListingMedia> ListingMedias { get; set; } = new List<ListingMedia>();
         //listing Package
         public int PackageId { get; set; }
         public Package Package { get; set; } = null!;
-         // Audit
+        // Audit
         public DateTime CreatedAt { get; set; }
+        //Fks
+        // مالک آگهی
+        public int UserId { get; set; }
+        public User User { get; set; } = null!;
 
+        public ICollection<BookmarkFavorite> BookmarkFavorites { get; set; }
+           = new List<BookmarkFavorite>();
     }
 }

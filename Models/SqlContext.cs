@@ -23,6 +23,11 @@ namespace BamawWebApi.Models
         public DbSet<Option> Options => Set<Option>();
         public DbSet<Package> Packages => Set<Package>();
         public DbSet<PackageOption> PackageOptions => Set<PackageOption>();
+        public DbSet<User> Users => Set<User>();
+        public DbSet<OtpVerification> OtpVerifications => Set<OtpVerification>();
+        public DbSet<BookmarkFavorite> BookmarkFavorites => Set<BookmarkFavorite>();
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -44,6 +49,9 @@ namespace BamawWebApi.Models
             // 
             modelBuilder.Entity<PackageOption>()
                         .HasKey(a => new { a.PackageId, a.OptionId });
+            //
+            modelBuilder.Entity<BookmarkFavorite>()
+                        .HasKey(a => new { a.UserId, a.CarListingId });
         }
     }
 }
