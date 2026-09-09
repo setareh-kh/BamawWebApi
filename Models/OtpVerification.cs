@@ -11,7 +11,11 @@ namespace BamawWebApi.Models
         [MaxLength(10)]
         public string Code { get; set; } = null!;
         public DateTime ExpiresAt { get; set; }
-        public bool IsUsed { get; set; }
+
         public DateTime CreatedAt { get; set; }
+
+        public DateTime? VerifiedAt { get; set; }
+
+        public bool IsUsed { get; set; }
     }
 }

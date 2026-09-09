@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BamawWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1903e599e5532ef4172b5ed7cb618b2981465ddb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3e6c51e9df826495b6b7bce8309c934fa33828")]
 [assembly: System.Reflection.AssemblyProductAttribute("BamawWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BamawWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
